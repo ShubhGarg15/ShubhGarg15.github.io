@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Bar (Percentage Based)</title>
+  <style>
+    .progress-container {
+      width: 500px; /* Adjust width as needed */
+      height: 20px;
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+    .progress-bar {
+      height: 100%;
+      background-color: #007bff;
+      transition: width 0.5s ease-in-out;  /* Animation for smooth filling */
+    }
+  </style>
+</head>
+<body>
+  <h1>Progress Bar (Percentage Based)</h1>
+  <div class="progress-container">
+    <div class="progress-bar" id="myProgressBar"></div>
+  </div>
+  <script>
+    const progressBar = document.getElementById("myProgressBar");
+    const predefinedPercentage = 70; // Set your desired percentage here (change to a number between 0 and 100)
+
+    function fillProgressBar() {
+      const containerRect = progressBar.parentElement.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (containerRect.top <= windowHeight && containerRect.bottom >= 0) {
+        // Element is visible on the viewport
+        progressBar.style.width = `${predefinedPercentage}%`;
+      }
+    }
+
+    window.addEventListener("scroll", fillProgressBar);
+    window.addEventListener("load", fillProgressBar); // Check on initial load too
+
+  </script>
+</body>
+</html>
