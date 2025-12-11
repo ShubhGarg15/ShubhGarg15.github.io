@@ -28,14 +28,14 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing", {
-        strings: ["Data","Code","Ideas","Insights"],
+        strings: ["Code","Data","Ideas","Insights"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Analyst","Programmer","Developer"],
+        strings: ["Developer","Programmer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
