@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <link rel="icon" href="images/title_pic.png" type="image/x-icon" />
+  <title>Shubham Sharma | Digital Realm</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+</head>
+<body>
+
+  <canvas id="matrix-canvas"></canvas>
+  <canvas id="particles-canvas"></canvas>
+
+  <div class="cursor-glow"></div>
+  <div class="cursor-dot"></div>
+
+  <div class="progress-ring">
+    <svg viewBox="0 0 36 36">
+      <circle class="ring-bg" cx="18" cy="18" r="16" />
+      <circle class="ring-fill" cx="18" cy="18" r="16" />
+    </svg>
+    <span class="ring-pct">0%</span>
+  </div>
+
+  <div class="scroll-top">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        MAXXs<span>SHUBH</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">~ Home</a></li>
+        <li><a href="#about" class="nav-link">~ About</a></li>
+        <li><a href="#projects" class="nav-link">~ Projects</a></li>
+        <li><a href="#skills" class="nav-link">~ Skills</a></li>
+        <li><a href="#experience" class="nav-link">~ Experience</a></li>
+        <li><a href="#contact" class="nav-link">~ Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg-city"></div>
+    <div class="hero-bg-grid"></div>
+    <div class="grid-overlay"></div>
+    <div class="hero-float-shapes">
+      <div class="float-shape s1"></div>
+      <div class="float-shape s2"></div>
+      <div class="float-shape s3"></div>
+      <div class="float-shape s4"></div>
+      <div class="float-shape s5"></div>
+      <div class="float-shape s6"></div>
+      <div class="float-corner c1"></div>
+      <div class="float-corner c2"></div>
+      <div class="float-corner c3"></div>
+      <div class="float-corner c4"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" data-reveal>
+        <span class="badge-dot"></span>
+        system_online
+      </div>
+      <h1 class="hero-title" data-reveal>
+        <span class="hl-1 glitch-name" data-text="Shubham">Shubham</span>
+        <span class="hl-2">Sharma</span>
+      </h1>
+      <div class="hero-sub" data-reveal>
+        Turning <span class="typing"></span> Into Reality.
+      </div>
+      <div class="hero-actions" data-reveal>
+        <a href="#projects" class="btn-neon" data-magnetic>
+          <span>Explore Work</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn-ghost" data-magnetic>
+          <span>Reach Out</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="section-bg"></div>
+    <div class="grid-overlay"></div>
+    <div class="section-inner">
+      <div class="section-label" data-reveal>
+        <span class="label-hash">#</span>
+        <h2>About</h2>
+        <span class="label-divider"></span>
+        <span class="label-desc">whoami — decoding identity</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-holo" data-reveal>
+          <div class="holo-frame">
+            <div class="holo-border"></div>
+            <img src="images/shubhport1.jpeg" alt="Shubham Sharma" loading="lazy" />
+            <div class="holo-scan"></div>
+          </div>
+          <div class="holo-stats">
+            <div class="holo-stat"><span class="h-num" data-target="2">0</span><span>roles</span></div>
+            <div class="holo-stat"><span class="h-num" data-target="3">0</span><span>projects</span></div>
+            <div class="holo-stat"><span class="h-num" data-target="10">0</span><span>tools</span></div>
+          </div>
+        </div>
+
+        <div class="about-text" data-reveal>
+          <div class="about-typing">I'm a <span class="typing-2"></span></div>
+          <p class="about-p">
+            A Data Analyst and ML enthusiast who enjoys turning raw information into practical impact.
+            I love building data pipelines, training models, and simplifying systems so they make sense to people.
+            <span class="scramble-trigger"><span class="scramble-text">Curiosity drives me. Learning keeps me moving. Creating keeps me alive.</span></span>
+            When I'm not working with data, you'll find me experimenting with clustering algorithms, building ETL workflows, or exploring how products work behind the scenes.
+          </p>
+          <div class="about-links">
+            <a href="images/Resume.pdf" target="_blank" class="btn-neon sm" data-magnetic>
+              <i class="fas fa-download"></i> Resume
+            </a>
+            <a href="https://github.com/ShubhGarg15" target="_blank" class="btn-icon-neon" data-magnetic><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shubham-sharma-63a7831bb/" target="_blank" class="btn-icon-neon" data-magnetic><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:shubhgargsharma15@gmail.com" class="btn-icon-neon" data-magnetic><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="section-bg"></div>
+    <div class="grid-overlay"></div>
+    <div class="section-inner">
+      <div class="section-label" data-reveal>
+        <span class="label-hash">#</span>
+        <h2>Projects</h2>
+        <span class="label-divider"></span>
+        <span class="label-desc">ls -la /projects</span>
+      </div>
+
+      <div class="projects-scroll-wrap">
+        <button class="scroll-arrow left" aria-label="Scroll left"><i class="fas fa-chevron-left"></i></button>
+        <div class="projects-grid">
+          <article class="proj-card" data-reveal data-delay="0">
+            <div class="card-neon-glow"></div>
+            <div class="corner-accent tl"></div>
+            <div class="corner-accent br"></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-folder"><i class="fas fa-eye"></i></span>
+                <div class="card-links">
+                  <a href="https://github.com/ShubhGarg15/VPipe" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h3 class="card-title">VPipe — Pipe Detection System</h3>
+              <div class="card-tags">
+                <span>Python</span>
+                <span>TensorFlow</span>
+                <span>Keras</span>
+                <span>CNN</span>
+                <span>OpenCV</span>
+                <span>Flask</span>
+              </div>
+              <p class="card-desc">Deep learning model using CNNs (TensorFlow/Keras) for real-time pipe detection — 90% accuracy, reducing false positives. Built for industrial safety with Flask API.</p>
+            </div>
+          </article>
+
+          <article class="proj-card" data-reveal data-delay="150">
+            <div class="card-neon-glow"></div>
+            <div class="corner-accent tl"></div>
+            <div class="corner-accent br"></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-folder"><i class="fas fa-chart-bar"></i></span>
+                <div class="card-links">
+                  <a href="https://github.com/ShubhGarg15" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h3 class="card-title">E-commerce Sales Analysis</h3>
+              <div class="card-tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>SQL</span>
+                <span>Matplotlib</span>
+                <span>Seaborn</span>
+              </div>
+              <p class="card-desc">Extracted and cleaned sales data from multiple sources (CSV, Excel, SQL). Analyzed trends, calculated key metrics, and built interactive dashboards.</p>
+            </div>
+          </article>
+
+          <article class="proj-card" data-reveal data-delay="300">
+            <div class="card-neon-glow"></div>
+            <div class="corner-accent tl"></div>
+            <div class="corner-accent br"></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-folder"><i class="fas fa-project-diagram"></i></span>
+                <div class="card-links">
+                </div>
+              </div>
+              <h3 class="card-title">K-Means Complaint Clustering</h3>
+              <div class="card-tags">
+                <span>Python</span>
+                <span>Scikit-learn</span>
+                <span>K-Means</span>
+                <span>Data Pipeline</span>
+              </div>
+              <p class="card-desc">Applied K-Means clustering to Zoho ITSC portal data, identifying common complaint patterns and improving tracking accuracy by 10%.</p>
+            </div>
+          </article>
+
+          <article class="proj-card" data-reveal data-delay="450">
+            <div class="card-neon-glow"></div>
+            <div class="corner-accent tl"></div>
+            <div class="corner-accent br"></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-folder"><i class="fas fa-music"></i></span>
+                <div class="card-links">
+                </div>
+              </div>
+              <h3 class="card-title">Harmoniq — Music Recommender</h3>
+              <div class="card-tags">
+                <span>Python</span>
+                <span>Spotify API</span>
+                <span>Collaborative Filtering</span>
+                <span>ML</span>
+              </div>
+              <p class="card-desc">Music recommendation engine using Spotify API and collaborative filtering. Predicts your next favorite track based on listening patterns.</p>
+            </div>
+          </article>
+        </div>
+        <button class="scroll-arrow right" aria-label="Scroll right"><i class="fas fa-chevron-right"></i></button>
+        <div class="scroll-fade left"></div>
+        <div class="scroll-fade right"></div>
+      </div>
+      <div class="scroll-indicators"><span class="scroll-dot active"></span><span class="scroll-dot"></span><span class="scroll-dot"></span><span class="scroll-dot"></span></div>
+
+      <div class="projects-secret" data-reveal>
+        <p><span class="secret-cmd">$ cat project_stories.txt</span></p>
+        <p class="secret-output" id="secret-output"></p>
+        <div style="display:flex;gap:8px;align-items:center;justify-content:center;margin-top:12px;">
+          <span style="color:var(--c2);font-family:var(--font-mono);font-size:13px;">$</span>
+          <input type="text" id="secret-cmd-input" placeholder="type help" style="background:transparent;border:none;border-bottom:1px solid rgba(255,255,255,0.1);color:var(--text);font-family:var(--font-mono);font-size:13px;padding:4px 0;outline:none;flex:1;max-width:240px;">
+          <span class="secret-cursor">_</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="section-bg"></div>
+    <div class="grid-overlay"></div>
+    <div class="section-inner">
+      <div class="section-label" data-reveal>
+        <span class="label-hash">#</span>
+        <h2>Skills</h2>
+        <span class="label-divider"></span>
+        <span class="label-desc">cat ~/skills.txt — toolchain report</span>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skills-desc" data-reveal>
+          <p>Data analyst and business analyst with hands-on experience in ML, data pipelines, ETL, and BI reporting. Proficient across Python ecosystem, SQL/NoSQL databases, cloud integration, and CRM platforms — building end-to-end data solutions that drive business decisions.</p>
+          <div class="explore-zone">
+            <h4>// tools_&_stack</h4>
+            <div class="explore-pills">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>NumPy</span>
+              <span>Matplotlib</span>
+              <span>Seaborn</span>
+              <span>OpenCV</span>
+              <span>TensorFlow</span>
+              <span>Scikit-learn</span>
+              <span>SQL</span>
+              <span>MongoDB</span>
+              <span>Excel</span>
+              <span>Power BI</span>
+              <span>Metabase</span>
+              <span>Jupyter</span>
+              <span>Azure Data Factory</span>
+              <span>ETL</span>
+              <span>Classification &amp; Regression</span>
+              <span>JIRA</span>
+              <span>Confluence</span>
+              <span>MS Dynamics (CRM)</span>
+              <span>Google Workspace</span>
+              <span>Windows</span>
+              <span>Linux</span>
+              <span>Agile</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-tubes" data-reveal>
+          <div class="tube">
+            <div class="tube-head">
+              <span><i class="fab fa-python"></i> Python (ML/Data)</span>
+              <span class="tube-pct">85%</span>
+            </div>
+            <div class="tube-track">
+              <div class="tube-fill" data-pct="85">
+                <div class="tube-glow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tube">
+            <div class="tube-head">
+              <span><i class="fas fa-database"></i> SQL / Databases</span>
+              <span class="tube-pct">80%</span>
+            </div>
+            <div class="tube-track">
+              <div class="tube-fill" data-pct="80">
+                <div class="tube-glow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tube">
+            <div class="tube-head">
+              <span><i class="fas fa-brain"></i> ML / TensorFlow</span>
+              <span class="tube-pct">70%</span>
+            </div>
+            <div class="tube-track">
+              <div class="tube-fill" data-pct="70">
+                <div class="tube-glow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tube">
+            <div class="tube-head">
+              <span><i class="fas fa-chart-line"></i> Power BI / ETL</span>
+              <span class="tube-pct">65%</span>
+            </div>
+            <div class="tube-track">
+              <div class="tube-fill" data-pct="65">
+                <div class="tube-glow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tube">
+            <div class="tube-head">
+              <span><i class="fas fa-file-excel"></i> Excel / Data Viz</span>
+              <span class="tube-pct">70%</span>
+            </div>
+            <div class="tube-track">
+              <div class="tube-fill" data-pct="70">
+                <div class="tube-glow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tube">
+            <div class="tube-head">
+              <span><i class="fas fa-cubes"></i> MongoDB / NoSQL</span>
+              <span class="tube-pct">60%</span>
+            </div>
+            <div class="tube-track">
+              <div class="tube-fill" data-pct="60">
+                <div class="tube-glow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience section" id="experience">
+    <div class="section-bg"></div>
+    <div class="grid-overlay"></div>
+    <div class="section-inner">
+      <div class="section-label" data-reveal>
+        <span class="label-hash">#</span>
+        <h2>Experience</h2>
+        <span class="label-divider"></span>
+        <span class="label-desc">cat ~/career.log — timeline trace</span>
+      </div>
+
+      <div class="timeline" data-reveal>
+        <div class="tl-line"></div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <span class="tl-role">Data Analyst</span>
+              <span class="tl-date">Oct 2025 — Present</span>
+            </div>
+            <div class="tl-org">Sourcemash Technologies Pvt. Ltd.</div>
+            <p class="tl-desc">
+              Developed data pipelines integrating mobile apps, MS CRM, and AS400 ERP data, supporting
+              BI and future AI/ML initiatives for a major e-commerce client. Automated data validation
+              using SQL and scripting, reducing data errors by 15%. Explored K-Means clustering algorithms
+              to identify common complaint patterns. Managed data integration via Azure Data Factory pipelines
+              from AS400, Magento, and other databases into a SQL Server BI replica.
+            </p>
+            <div class="tl-tags">
+              <span>SQL</span>
+              <span>Azure Data Factory</span>
+              <span>K-Means</span>
+              <span>ETL</span>
+              <span>BI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <span class="tl-role">Business Analyst</span>
+              <span class="tl-date">Jun 2024 — Jun 2025</span>
+            </div>
+            <div class="tl-org">Desire Energy Solutions Pvt. Ltd.</div>
+            <p class="tl-desc">
+              Managed PMSC (complaint management platform) and DMTS (field operations app).
+              Led development of Alpha — an internal app for requests and surveys, reducing manual effort by 20%.
+              Oversaw Aqualogix 1.0 & 2.0 smart water management systems across 2,000+ active sites,
+              improving system uptime by 30% through logic-based fixes. Drafted PRDs, user stories
+              (Confluence), wireframes, and test cases.
+            </p>
+            <div class="tl-tags">
+              <span>Product Mgmt</span>
+              <span>IoT</span>
+              <span>PRD</span>
+              <span>Confluence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="section-bg"></div>
+    <div class="grid-overlay"></div>
+    <div class="section-inner">
+      <div class="section-label" data-reveal>
+        <span class="label-hash">#</span>
+        <h2>Contact</h2>
+        <span class="label-divider"></span>
+        <span class="label-desc">./ping.sh --target shubham — establish link</span>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-channels" data-reveal>
+          <p class="scramble-trigger"><span class="scramble-text">Have a question, project idea, or just want to connect? Drop a message and I'll get back to you.</span></p>
+          <div class="channel-list">
+            <a href="mailto:shubhgargsharma15@gmail.com" class="channel" data-magnetic>
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span class="ch-label">Email</span>
+                <span class="ch-val">shubhgargsharma15@gmail.com</span>
+              </div>
+              <i class="fas fa-external-link-alt ch-ext"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shubham-sharma-63a7831bb/" target="_blank" class="channel" data-magnetic>
+              <i class="fab fa-linkedin"></i>
+              <div>
+                <span class="ch-label">LinkedIn</span>
+                <span class="ch-val">Shubham Sharma</span>
+              </div>
+              <i class="fas fa-external-link-alt ch-ext"></i>
+            </a>
+            <a href="https://github.com/ShubhGarg15" target="_blank" class="channel" data-magnetic>
+              <i class="fab fa-github"></i>
+              <div>
+                <span class="ch-label">GitHub</span>
+                <span class="ch-val">@ShubhGarg15</span>
+              </div>
+              <i class="fas fa-external-link-alt ch-ext"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="terminal-form" id="term-form" action="https://formspree.io/f/mwvdnnzy" method="POST" data-reveal>
+          <div class="term-header">
+            <span class="term-dot red"></span>
+            <span class="term-dot yellow"></span>
+            <span class="term-dot green"></span>
+            <span class="term-title">transmission.sh</span>
+          </div>
+          <div class="term-body">
+            <div class="term-line">
+              <span class="term-prompt">user@shubham:~$</span>
+              <input type="text" name="name" placeholder="whoami" required />
+            </div>
+            <div class="term-line">
+              <span class="term-prompt">user@shubham:~$</span>
+              <input type="email" name="email" placeholder="mail -s [your-email]" required />
+            </div>
+            <div class="term-line">
+              <span class="term-prompt">user@shubham:~$</span>
+              <input type="text" name="subject" placeholder="subject=[message-topic]" required />
+            </div>
+            <div class="term-line area">
+              <span class="term-prompt">user@shubham:~$</span>
+              <textarea name="message" placeholder="cat > message.txt" required></textarea>
+            </div>
+            <div class="term-actions">
+              <button type="submit" class="btn-neon sm" id="term-submit">
+                <span>~$ ./send_transmission.sh</span>
+              </button>
+              <span class="term-status" id="term-status"></span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <p><span class="footer-prompt">$</span> <span class="scramble-trigger"><span class="scramble-text">built_with</span></span> <i class="fas fa-heart"></i> by <span class="fw-bold">MAXXsSHUBH</span> <span class="footer-sub">// v2.0.1</span></p>
+      <p class="footer-sub" id="footer-year">&copy; 2026 — all signals green</p>
+    </div>
+  </footer>
+
+  <div class="toast"><i class="fas fa-check-circle"></i><span></span></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
